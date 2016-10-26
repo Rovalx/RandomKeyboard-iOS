@@ -12,7 +12,40 @@
 		F9E2CC071DC15D880015D680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC051DC15D880015D680 /* Main.storyboard */; };
 		F9E2CC091DC15D880015D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC081DC15D880015D680 /* Assets.xcassets */; };
 		F9E2CC0C1DC15D880015D680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC0A1DC15D880015D680 /* LaunchScreen.storyboard */; };
+		F9E2CC1A1DC15DAB0015D680 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */; };
+		F9E2CC1E1DC15DAB0015D680 /* RandKey.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F9E2CC171DC15DAB0015D680 /* RandKey.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9E2CC2A1DC15DDC0015D680 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */; };
+		F9E2CC2B1DC15DDC0015D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC241DC15DDC0015D680 /* Assets.xcassets */; };
+		F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC251DC15DDC0015D680 /* RKButton.swift */; };
+		F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */; };
+		F9E2CC2E1DC15DDC0015D680 /* RKDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */; };
+		F9E2CC2F1DC15DDC0015D680 /* RKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC281DC15DDC0015D680 /* RKTextView.swift */; };
+		F9E2CC301DC15DDC0015D680 /* Texts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC291DC15DDC0015D680 /* Texts.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9E2CC1C1DC15DAB0015D680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E2CBF61DC15D880015D680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9E2CC161DC15DAB0015D680;
+			remoteInfo = RandKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9E2CC221DC15DAB0015D680 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F9E2CC1E1DC15DAB0015D680 /* RandKey.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F9E2CBFE1DC15D880015D680 /* RandomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +55,27 @@
 		F9E2CC081DC15D880015D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E2CC0B1DC15D880015D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9E2CC0D1DC15D880015D680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E2CC171DC15DAB0015D680 /* RandKey.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandKey.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F9E2CC1B1DC15DAB0015D680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		F9E2CC241DC15DDC0015D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9E2CC251DC15DDC0015D680 /* RKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKButton.swift; sourceTree = "<group>"; };
+		F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKDataSource.swift; sourceTree = "<group>"; };
+		F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKDefaultView.xib; sourceTree = "<group>"; };
+		F9E2CC281DC15DDC0015D680 /* RKTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKTextView.swift; sourceTree = "<group>"; };
+		F9E2CC291DC15DDC0015D680 /* Texts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Texts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F9E2CBFB1DC15D880015D680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E2CC141DC15DAB0015D680 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E2CC001DC15D880015D680 /* RandomKeyboard */,
+				F9E2CC181DC15DAB0015D680 /* RandKey */,
 				F9E2CBFF1DC15D880015D680 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E2CBFE1DC15D880015D680 /* RandomKeyboard.app */,
+				F9E2CC171DC15DAB0015D680 /* RandKey.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +106,78 @@
 		F9E2CC001DC15D880015D680 /* RandomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F9E2CC361DC15E360015D680 /* ViewController */,
 				F9E2CC011DC15D880015D680 /* AppDelegate.swift */,
-				F9E2CC031DC15D880015D680 /* ViewController.swift */,
 				F9E2CC051DC15D880015D680 /* Main.storyboard */,
-				F9E2CC081DC15D880015D680 /* Assets.xcassets */,
 				F9E2CC0A1DC15D880015D680 /* LaunchScreen.storyboard */,
-				F9E2CC0D1DC15D880015D680 /* Info.plist */,
+				F9E2CC351DC15E310015D680 /* Support */,
 			);
 			path = RandomKeyboard;
+			sourceTree = "<group>";
+		};
+		F9E2CC181DC15DAB0015D680 /* RandKey */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */,
+				F9E2CC341DC15E1C0015D680 /* DataSource */,
+				F9E2CC331DC15E080015D680 /* Views */,
+				F9E2CC311DC15DE20015D680 /* Extensions */,
+				F9E2CC321DC15DEC0015D680 /* Support */,
+			);
+			path = RandKey;
+			sourceTree = "<group>";
+		};
+		F9E2CC311DC15DE20015D680 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F9E2CC321DC15DEC0015D680 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC241DC15DDC0015D680 /* Assets.xcassets */,
+				F9E2CC1B1DC15DAB0015D680 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F9E2CC331DC15E080015D680 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC251DC15DDC0015D680 /* RKButton.swift */,
+				F9E2CC281DC15DDC0015D680 /* RKTextView.swift */,
+				F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F9E2CC341DC15E1C0015D680 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */,
+				F9E2CC291DC15DDC0015D680 /* Texts.plist */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		F9E2CC351DC15E310015D680 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC0D1DC15D880015D680 /* Info.plist */,
+				F9E2CC081DC15D880015D680 /* Assets.xcassets */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F9E2CC361DC15E360015D680 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9E2CC031DC15D880015D680 /* ViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +190,34 @@
 				F9E2CBFA1DC15D880015D680 /* Sources */,
 				F9E2CBFB1DC15D880015D680 /* Frameworks */,
 				F9E2CBFC1DC15D880015D680 /* Resources */,
+				F9E2CC221DC15DAB0015D680 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F9E2CC1D1DC15DAB0015D680 /* PBXTargetDependency */,
 			);
 			name = RandomKeyboard;
 			productName = RandomKeyboard;
 			productReference = F9E2CBFE1DC15D880015D680 /* RandomKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F9E2CC161DC15DAB0015D680 /* RandKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E2CC1F1DC15DAB0015D680 /* Build configuration list for PBXNativeTarget "RandKey" */;
+			buildPhases = (
+				F9E2CC131DC15DAB0015D680 /* Sources */,
+				F9E2CC141DC15DAB0015D680 /* Frameworks */,
+				F9E2CC151DC15DAB0015D680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandKey;
+			productName = RandKey;
+			productReference = F9E2CC171DC15DAB0015D680 /* RandKey.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +231,12 @@
 				TargetAttributes = {
 					F9E2CBFD1DC15D880015D680 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4CA4554E6F;
+						ProvisioningStyle = Automatic;
+					};
+					F9E2CC161DC15DAB0015D680 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4CA4554E6F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				F9E2CBFD1DC15D880015D680 /* RandomKeyboard */,
+				F9E2CC161DC15DAB0015D680 /* RandKey */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +271,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9E2CC151DC15DAB0015D680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E2CC301DC15DDC0015D680 /* Texts.plist in Resources */,
+				F9E2CC2B1DC15DDC0015D680 /* Assets.xcassets in Resources */,
+				F9E2CC2E1DC15DDC0015D680 /* RKDefaultView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +293,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9E2CC131DC15DAB0015D680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E2CC1A1DC15DAB0015D680 /* KeyboardViewController.swift in Sources */,
+				F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */,
+				F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */,
+				F9E2CC2A1DC15DDC0015D680 /* ArrayExtension.swift in Sources */,
+				F9E2CC2F1DC15DDC0015D680 /* RKTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9E2CC1D1DC15DAB0015D680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9E2CC161DC15DAB0015D680 /* RandKey */;
+			targetProxy = F9E2CC1C1DC15DAB0015D680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F9E2CC051DC15D880015D680 /* Main.storyboard */ = {
@@ -259,7 +431,9 @@
 		F9E2CC111DC15D880015D680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
@@ -271,11 +445,39 @@
 		F9E2CC121DC15D880015D680 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9E2CC201DC15DAB0015D680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4CA4554E6F;
+				INFOPLIST_FILE = RandKey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9E2CC211DC15DAB0015D680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4CA4554E6F;
+				INFOPLIST_FILE = RandKey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +499,14 @@
 			buildConfigurations = (
 				F9E2CC111DC15D880015D680 /* Debug */,
 				F9E2CC121DC15D880015D680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9E2CC1F1DC15DAB0015D680 /* Build configuration list for PBXNativeTarget "RandKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E2CC201DC15DAB0015D680 /* Debug */,
+				F9E2CC211DC15DAB0015D680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

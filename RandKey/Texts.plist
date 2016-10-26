@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmojiTexts</key>
+	<array>
+		<string>#animals 😺🐁🐍🐨</string>
+		<string>#happyorsad 😣😄😥😋</string>
+		<string>#whatever 🚀🏣❣️💯</string>
+		<string>🚑 🚒 🚐 🚚 🚛 🚜 they are going after you!</string>
+		<string>one up! ☝️ one down! ↘️</string>
+		<string>all people are awasome 💂🏽👵🏾👳🏿💇🏼 👶🏻</string>
+		<string>home at last! 👨‍👩‍👧‍👦 👨‍👩‍👦‍👦 👨‍👩‍👧‍👧</string>
+		<string>#hungry 🍔 🍟 🌭🍑 🍍 🍅🍴</string>
+		<string>flags, flags everywhere! 🇵🇱 🇵🇹 🇵🇷 🇶🇦 🇷🇪 🇷🇴 🇷🇺 🇷🇼 🇧🇱 🇸🇭 🇰🇳 </string>
+		<string>👨 👩 #boy #girl 💑</string>
+	</array>
+	<key>LongTexts</key>
+	<array>
+		<string>There are certain text input objects that your custom keyboard is not eligible to type into: secure fields (aka. passwords), phone pad objects (like the phone number fields in Contacts).</string>
+		<string>Lorem ipsum dolor sit amet nibh. Ut molestie, neque auctor eu, cursus wisi, eget lectus id eros ac nunc vel neque tristique tellus. Cum sociis natoque penatibus et ultrices fringilla. Phasellus consequat. Aliquam auctor vel, adipiscing elit. </string>
+		<string>If you&apos;re trying to achieve, there will be roadblocks. I&apos;ve had them; everybody has had them. But obstacles don&apos;t have to stop you. If you run into a wall, don&apos;t turn around and give up. Figure out how to climb it, go through it, or work around it.</string>
+		<string>To me, the extraordinary aspect of martial arts lies in its simplicity. The easy way is also the right way, and martial arts is nothing at all special; the closer to the true way of martial arts, the less wastage of expression there is. </string>
+		<string>I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.</string>
+		<string>Absolute space, in its own nature, without regard to anything external, remains always similar and immovable. Relative space is some movable dimension or measure of the absolute spaces, which our senses determine by its position to bodies, and which is vulgarly taken for immovable space.</string>
+		<string>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven&apos;t found it yet, keep looking. Don&apos;t settle. As with all matters of the heart, you&apos;ll know when you find it.</string>
+		<string>I love those who can smile in trouble, who can gather strength from distress, and grow brave by reflection. &apos;Tis the business of little minds to shrink, but they whose heart is firm, and whose conscience approves their conduct, will pursue their principles unto death.</string>
+		<string>The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.</string>
+		<string>Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important.</string>
+	</array>
+	<key>ShortTexts</key>
+	<array>
+		<string>Well done, anon. You picked a good one.</string>
+		<string>That&apos;s pretty weak lol</string>
+		<string>I personally think a cayman S would be much better.</string>
+		<string>lol who cares</string>
+		<string>Nobody who ever gave his best regretted it.</string>
+		<string>Whether it&apos;s the best of times or the worst of times, it&apos;s the only time we&apos;ve got.</string>
+		<string>The best way to predict the future is to create it.</string>
+		<string>Deletes the character to the left of the insertion point.</string>
+		<string>What to learn the basics of computer programming?</string>
+		<string>Life is a drink, and love&apos;s a drug.</string>
+		<string>You know you make my world light up.</string>
+		<string>Check this out!</string>
+		<string>When snake is alive snake eat ants.</string>
+		<string>Magicians  can  make marvelous magic.</string>
+		<string>Those unique feelings in deep secret.</string>
+		<string>Tune your mind for afresh heavenly pleasure.</string>
+		<string>Just enjoy imagination and never get deceived.</string>
+		<string>Those flashing visions can never be recited.</string>
+		<string>Home sweet home.</string>
+		<string>I like it as it is.</string>
+	</array>
+	<key>SingleWords</key>
+	<array>
+		<string>coffee</string>
+		<string>school</string>
+		<string>family</string>
+		<string>mother</string>
+		<string>father</string>
+		<string>hot</string>
+		<string>table</string>
+		<string>child</string>
+		<string>people</string>
+		<string>man</string>
+		<string>girl</string>
+		<string>day</string>
+		<string>night</string>
+		<string>development</string>
+		<string>volley</string>
+		<string>gold</string>
+		<string>earth</string>
+		<string>moon</string>
+		<string>swim</string>
+		<string>live</string>
+		<string>horror</string>
+		<string>crop</string>
+		<string>driving</string>
+		<string>walking</string>
+		<string>sport</string>
+		<string>one</string>
+		<string>axe</string>
+		<string>always</string>
+		<string>rich</string>
+		<string>sun</string>
+		<string>away</string>
+		<string>voice</string>
+		<string>doctor</string>
+		<string>house</string>
+		<string>fuel</string>
+		<string>crayon</string>
+		<string>dinner</string>
+		<string>donkey</string>
+		<string>word</string>
+		<string>sweet</string>
+		<string>breath</string>
+		<string>say</string>
+		<string>you</string>
+		<string>going</string>
+		<string>easy</string>
+		<string>hello</string>
+		<string>word</string>
+		<string>confidence</string>
+		<string>peach</string>
+		<string>awesome</string>
+	</array>
+</dict>
+</plist>

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>RandKey.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RandomKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F9E2CBFD1DC15D880015D680</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9E2CC161DC15DAB0015D680</key>
 		<dict>
 			<key>primary</key>
 			<true/>
