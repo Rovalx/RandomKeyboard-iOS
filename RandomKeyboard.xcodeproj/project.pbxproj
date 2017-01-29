@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F972927A1E3D0183005CC419 /* RKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97292791E3D0183005CC419 /* RKTextView.swift */; };
 		F9E2CC021DC15D880015D680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC011DC15D880015D680 /* AppDelegate.swift */; };
 		F9E2CC041DC15D880015D680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC031DC15D880015D680 /* ViewController.swift */; };
 		F9E2CC071DC15D880015D680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC051DC15D880015D680 /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC251DC15DDC0015D680 /* RKButton.swift */; };
 		F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */; };
 		F9E2CC2E1DC15DDC0015D680 /* RKDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */; };
-		F9E2CC2F1DC15DDC0015D680 /* RKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC281DC15DDC0015D680 /* RKTextView.swift */; };
 		F9E2CC301DC15DDC0015D680 /* Texts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC291DC15DDC0015D680 /* Texts.plist */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F97292791E3D0183005CC419 /* RKTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKTextView.swift; sourceTree = "<group>"; };
 		F9E2CBFE1DC15D880015D680 /* RandomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2CC011DC15D880015D680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E2CC031DC15D880015D680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		F9E2CC251DC15DDC0015D680 /* RKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKButton.swift; sourceTree = "<group>"; };
 		F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKDataSource.swift; sourceTree = "<group>"; };
 		F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKDefaultView.xib; sourceTree = "<group>"; };
-		F9E2CC281DC15DDC0015D680 /* RKTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKTextView.swift; sourceTree = "<group>"; };
 		F9E2CC291DC15DDC0015D680 /* Texts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Texts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97292781E3D014D005CC419 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F97292791E3D0183005CC419 /* RKTextView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F9E2CBF51DC15D880015D680 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +114,7 @@
 		F9E2CC001DC15D880015D680 /* RandomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F97292781E3D014D005CC419 /* Views */,
 				F9E2CC361DC15E360015D680 /* ViewController */,
 				F9E2CC011DC15D880015D680 /* AppDelegate.swift */,
 				F9E2CC051DC15D880015D680 /* Main.storyboard */,
@@ -148,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				F9E2CC251DC15DDC0015D680 /* RKButton.swift */,
-				F9E2CC281DC15DDC0015D680 /* RKTextView.swift */,
 				F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */,
 			);
 			name = Views;
@@ -231,13 +239,13 @@
 				TargetAttributes = {
 					F9E2CBFD1DC15D880015D680 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4CA4554E6F;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = J5AJCLAX66;
+						ProvisioningStyle = Manual;
 					};
 					F9E2CC161DC15DAB0015D680 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4CA4554E6F;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = J5AJCLAX66;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -290,6 +298,7 @@
 			files = (
 				F9E2CC041DC15D880015D680 /* ViewController.swift in Sources */,
 				F9E2CC021DC15D880015D680 /* AppDelegate.swift in Sources */,
+				F972927A1E3D0183005CC419 /* RKTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +310,6 @@
 				F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */,
 				F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */,
 				F9E2CC2A1DC15DDC0015D680 /* ArrayExtension.swift in Sources */,
-				F9E2CC2F1DC15DDC0015D680 /* RKTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +441,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				DEVELOPMENT_TEAM = J5AJCLAX66;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a38e0a52-95c2-4cdd-bb30-4b6a4f572795";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Provisioning";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -447,11 +457,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = J5AJCLAX66;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a2207e8e-070d-446b-921c-d9c0d90cbc5a";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -459,11 +472,13 @@
 		F9E2CC201DC15DAB0015D680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				DEVELOPMENT_TEAM = J5AJCLAX66;
 				INFOPLIST_FILE = RandKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a38e0a52-95c2-4cdd-bb30-4b6a4f572795";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Provisioning";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -472,11 +487,14 @@
 		F9E2CC211DC15DAB0015D680 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = J5AJCLAX66;
 				INFOPLIST_FILE = RandKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a2207e8e-070d-446b-921c-d9c0d90cbc5a";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -501,6 +519,7 @@
 				F9E2CC121DC15D880015D680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9E2CC1F1DC15DAB0015D680 /* Build configuration list for PBXNativeTarget "RandKey" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +528,7 @@
 				F9E2CC211DC15DAB0015D680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

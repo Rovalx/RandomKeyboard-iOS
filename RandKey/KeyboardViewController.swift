@@ -18,6 +18,9 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var textWithEmojiKeyboardButton: UIButton!
     @IBOutlet var singleWorkKeyboardButton: UIButton!
     @IBOutlet var dismissKeyboardButton: UIButton!
+    @IBOutlet weak var image1KeyboardButton: UIButton!
+    @IBOutlet weak var image2KeyboardButton: UIButton!
+    @IBOutlet weak var infoKeyboardLabel: UILabel!
     
     // MARK: Properties
     
@@ -47,7 +50,17 @@ class KeyboardViewController: UIInputViewController {
         self.loadInterface()
         self.setupKeyboard()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        // If not full access granted - show info label
+        if !isOpenAccessGranted() {
+            self.infoKeyboardLabel.text = "Enable full access to copy images"
+        } else {
+            self.infoKeyboardLabel.text = ""
+        }
     }
     
     /// Loads keyboard view from nib
@@ -69,6 +82,16 @@ class KeyboardViewController: UIInputViewController {
     
     // MARK: Actions
     
+    @IBAction func imageCopyAction(_ sender: UIButton) {
+        
+        // We can always get image from button
+        if let img: UIImage = sender.image(for: .normal) {
+            UIPasteboard.general.image = img
+            self.infoKeyboardLabel.text = "Copied!"
+        }
+        
+        
+    }
     @IBAction func dismissKeyboardAction(_ sender: AnyObject) {
         
         self.dismissKeyboard()
@@ -76,6 +99,7 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func insertPlainSentanceAction(_ sender: AnyObject) {
+        print("Disp")
         self.insertText(text:
             self.dataSource?.shortTexts.randomItem() ?? "")
     }
@@ -114,5 +138,31 @@ class KeyboardViewController: UIInputViewController {
     private func insertText(text: String) {
         let proxy = textDocumentProxy
         proxy.insertText(text + " ")
+    }
+    
+    // Checks if full access granted
+    func isOpenAccessGranted() -> Bool {
+        
+        if #available(iOSApplicationExtension 10.0, *) {
+            UIPasteboard.general.string = "TEST"
+            
+            if UIPasteboard.general.hasStrings {
+                // Enable string-related control...
+                UIPasteboard.general.string = ""
+                return  true
+            } else {
+                UIPasteboard.general.string = ""
+                return  false
+            }
+        } else {
+            // Fallback on earlier versions
+            if UIPasteboard.general.isKind(of: UIPasteboard.self) {
+                return true
+            } else {
+                return false
+            }
+            
+        }
+        
     }
 }

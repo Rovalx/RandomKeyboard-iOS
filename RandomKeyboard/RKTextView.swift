@@ -2,9 +2,9 @@ import UIKit
 
 
 @IBDesignable
-class RKTextView: UITextView {
+public class RKTextView: UITextView {
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -14,7 +14,7 @@ class RKTextView: UITextView {
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -23,7 +23,7 @@ class RKTextView: UITextView {
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
+    @IBInspectable public var borderColor: UIColor {
         get {
             if let color = layer.borderColor {
                 return UIColor(cgColor: color)
