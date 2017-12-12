@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F972927A1E3D0183005CC419 /* RKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97292791E3D0183005CC419 /* RKTextView.swift */; };
+		F9AC919D1FAF1E4D00CD05AD /* TextsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC919C1FAF1E4D00CD05AD /* TextsViewController.swift */; };
+		F9AC91A21FAF266400CD05AD /* RKTextDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC91A11FAF266400CD05AD /* RKTextDataSource.swift */; };
+		F9AC91A31FAF282100CD05AD /* Texts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC291DC15DDC0015D680 /* Texts.plist */; };
+		F9AC91A41FAF284600CD05AD /* RKDefaultPlistReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC261DC15DDC0015D680 /* RKDefaultPlistReader.swift */; };
+		F9AC91A51FAF292900CD05AD /* RKTextDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC91A11FAF266400CD05AD /* RKTextDataSource.swift */; };
+		F9AC91A61FAF2C4300CD05AD /* RKDefaultPlistReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC261DC15DDC0015D680 /* RKDefaultPlistReader.swift */; };
+		F9AC91A91FAF328500CD05AD /* LoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC91A81FAF328500CD05AD /* LoginPasswordViewController.swift */; };
+		F9AC91AB1FAF357F00CD05AD /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC91AA1FAF357F00CD05AD /* LoginTableViewCell.swift */; };
+		F9C6D03C1F94F16600327CED /* RKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6D03B1F94F16600327CED /* RKView.swift */; };
 		F9E2CC021DC15D880015D680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC011DC15D880015D680 /* AppDelegate.swift */; };
-		F9E2CC041DC15D880015D680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC031DC15D880015D680 /* ViewController.swift */; };
+		F9E2CC041DC15D880015D680 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC031DC15D880015D680 /* MainViewController.swift */; };
 		F9E2CC071DC15D880015D680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC051DC15D880015D680 /* Main.storyboard */; };
 		F9E2CC091DC15D880015D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC081DC15D880015D680 /* Assets.xcassets */; };
 		F9E2CC0C1DC15D880015D680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC0A1DC15D880015D680 /* LaunchScreen.storyboard */; };
 		F9E2CC1A1DC15DAB0015D680 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */; };
 		F9E2CC1E1DC15DAB0015D680 /* RandKey.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F9E2CC171DC15DAB0015D680 /* RandKey.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F9E2CC2A1DC15DDC0015D680 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */; };
 		F9E2CC2B1DC15DDC0015D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC241DC15DDC0015D680 /* Assets.xcassets */; };
 		F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC251DC15DDC0015D680 /* RKButton.swift */; };
-		F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */; };
 		F9E2CC2E1DC15DDC0015D680 /* RKDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */; };
 		F9E2CC301DC15DDC0015D680 /* Texts.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E2CC291DC15DDC0015D680 /* Texts.plist */; };
 /* End PBXBuildFile section */
@@ -49,9 +56,16 @@
 
 /* Begin PBXFileReference section */
 		F97292791E3D0183005CC419 /* RKTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKTextView.swift; sourceTree = "<group>"; };
+		F9AC919C1FAF1E4D00CD05AD /* TextsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsViewController.swift; sourceTree = "<group>"; };
+		F9AC919E1FAF210300CD05AD /* RandKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandKey.entitlements; sourceTree = "<group>"; };
+		F9AC919F1FAF211F00CD05AD /* RandomKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandomKeyboard.entitlements; sourceTree = "<group>"; };
+		F9AC91A11FAF266400CD05AD /* RKTextDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKTextDataSource.swift; sourceTree = "<group>"; };
+		F9AC91A81FAF328500CD05AD /* LoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewController.swift; sourceTree = "<group>"; };
+		F9AC91AA1FAF357F00CD05AD /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		F9C6D03B1F94F16600327CED /* RKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKView.swift; sourceTree = "<group>"; };
 		F9E2CBFE1DC15D880015D680 /* RandomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2CC011DC15D880015D680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9E2CC031DC15D880015D680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9E2CC031DC15D880015D680 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F9E2CC061DC15D880015D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9E2CC081DC15D880015D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E2CC0B1DC15D880015D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,12 +73,11 @@
 		F9E2CC171DC15DAB0015D680 /* RandKey.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandKey.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		F9E2CC1B1DC15DAB0015D680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		F9E2CC241DC15DDC0015D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E2CC251DC15DDC0015D680 /* RKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKButton.swift; sourceTree = "<group>"; };
-		F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKDataSource.swift; sourceTree = "<group>"; };
+		F9E2CC261DC15DDC0015D680 /* RKDefaultPlistReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RKDefaultPlistReader.swift; path = ../RandKey/RKDefaultPlistReader.swift; sourceTree = "<group>"; };
 		F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKDefaultView.xib; sourceTree = "<group>"; };
-		F9E2CC291DC15DDC0015D680 /* Texts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Texts.plist; sourceTree = "<group>"; };
+		F9E2CC291DC15DDC0015D680 /* Texts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Texts.plist; path = ../RandKey/Texts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +106,33 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F9AC91A01FAF264E00CD05AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC91A11FAF266400CD05AD /* RKTextDataSource.swift */,
+				F9E2CC261DC15DDC0015D680 /* RKDefaultPlistReader.swift */,
+				F9E2CC291DC15DDC0015D680 /* Texts.plist */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F9AC91A71FAF321900CD05AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC91AA1FAF357F00CD05AD /* LoginTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F9AC91AC1FAF3A1400CD05AD /* Login/Password */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC91A71FAF321900CD05AD /* Cells */,
+				F9AC91A81FAF328500CD05AD /* LoginPasswordViewController.swift */,
+			);
+			name = Login/Password;
+			sourceTree = "<group>";
+		};
 		F9E2CBF51DC15D880015D680 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +154,8 @@
 		F9E2CC001DC15D880015D680 /* RandomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC919F1FAF211F00CD05AD /* RandomKeyboard.entitlements */,
+				F9AC91A01FAF264E00CD05AD /* Utils */,
 				F97292781E3D014D005CC419 /* Views */,
 				F9E2CC361DC15E360015D680 /* ViewController */,
 				F9E2CC011DC15D880015D680 /* AppDelegate.swift */,
@@ -127,21 +169,12 @@
 		F9E2CC181DC15DAB0015D680 /* RandKey */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC919E1FAF210300CD05AD /* RandKey.entitlements */,
 				F9E2CC191DC15DAB0015D680 /* KeyboardViewController.swift */,
-				F9E2CC341DC15E1C0015D680 /* DataSource */,
 				F9E2CC331DC15E080015D680 /* Views */,
-				F9E2CC311DC15DE20015D680 /* Extensions */,
 				F9E2CC321DC15DEC0015D680 /* Support */,
 			);
 			path = RandKey;
-			sourceTree = "<group>";
-		};
-		F9E2CC311DC15DE20015D680 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F9E2CC231DC15DDC0015D680 /* ArrayExtension.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		F9E2CC321DC15DEC0015D680 /* Support */ = {
@@ -156,19 +189,11 @@
 		F9E2CC331DC15E080015D680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9C6D03B1F94F16600327CED /* RKView.swift */,
 				F9E2CC251DC15DDC0015D680 /* RKButton.swift */,
 				F9E2CC271DC15DDC0015D680 /* RKDefaultView.xib */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		F9E2CC341DC15E1C0015D680 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				F9E2CC261DC15DDC0015D680 /* RKDataSource.swift */,
-				F9E2CC291DC15DDC0015D680 /* Texts.plist */,
-			);
-			name = DataSource;
 			sourceTree = "<group>";
 		};
 		F9E2CC351DC15E310015D680 /* Support */ = {
@@ -183,7 +208,9 @@
 		F9E2CC361DC15E360015D680 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F9E2CC031DC15D880015D680 /* ViewController.swift */,
+				F9AC91AC1FAF3A1400CD05AD /* Login/Password */,
+				F9E2CC031DC15D880015D680 /* MainViewController.swift */,
+				F9AC919C1FAF1E4D00CD05AD /* TextsViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -239,13 +266,23 @@
 				TargetAttributes = {
 					F9E2CBFD1DC15D880015D680 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J5AJCLAX66;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4CA4554E6F;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F9E2CC161DC15DAB0015D680 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J5AJCLAX66;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4CA4554E6F;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E2CC0C1DC15D880015D680 /* LaunchScreen.storyboard in Resources */,
+				F9AC91A31FAF282100CD05AD /* Texts.plist in Resources */,
 				F9E2CC091DC15D880015D680 /* Assets.xcassets in Resources */,
 				F9E2CC071DC15D880015D680 /* Main.storyboard in Resources */,
 			);
@@ -296,9 +334,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E2CC041DC15D880015D680 /* ViewController.swift in Sources */,
+				F9AC91A21FAF266400CD05AD /* RKTextDataSource.swift in Sources */,
+				F9AC91A91FAF328500CD05AD /* LoginPasswordViewController.swift in Sources */,
+				F9E2CC041DC15D880015D680 /* MainViewController.swift in Sources */,
 				F9E2CC021DC15D880015D680 /* AppDelegate.swift in Sources */,
+				F9AC91A41FAF284600CD05AD /* RKDefaultPlistReader.swift in Sources */,
 				F972927A1E3D0183005CC419 /* RKTextView.swift in Sources */,
+				F9AC919D1FAF1E4D00CD05AD /* TextsViewController.swift in Sources */,
+				F9AC91AB1FAF357F00CD05AD /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E2CC1A1DC15DAB0015D680 /* KeyboardViewController.swift in Sources */,
-				F9E2CC2D1DC15DDC0015D680 /* RKDataSource.swift in Sources */,
+				F9AC91A51FAF292900CD05AD /* RKTextDataSource.swift in Sources */,
+				F9AC91A61FAF2C4300CD05AD /* RKDefaultPlistReader.swift in Sources */,
+				F9C6D03C1F94F16600327CED /* RKView.swift in Sources */,
 				F9E2CC2C1DC15DDC0015D680 /* RKButton.swift in Sources */,
-				F9E2CC2A1DC15DDC0015D680 /* ArrayExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,13 +485,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J5AJCLAX66;
+				CODE_SIGN_ENTITLEMENTS = RandomKeyboard/RandomKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a38e0a52-95c2-4cdd-bb30-4b6a4f572795";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Provisioning";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -457,14 +505,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = J5AJCLAX66;
+				CODE_SIGN_ENTITLEMENTS = RandomKeyboard/RandomKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a2207e8e-070d-446b-921c-d9c0d90cbc5a";
-				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -472,13 +523,17 @@
 		F9E2CC201DC15DAB0015D680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = J5AJCLAX66;
+				CODE_SIGN_ENTITLEMENTS = RandKey/RandKey.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandKey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a38e0a52-95c2-4cdd-bb30-4b6a4f572795";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Provisioning";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -487,14 +542,17 @@
 		F9E2CC211DC15DAB0015D680 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = J5AJCLAX66;
+				CODE_SIGN_ENTITLEMENTS = RandKey/RandKey.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CA4554E6F;
 				INFOPLIST_FILE = RandKey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.RandomKeyboard.RandKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a2207e8e-070d-446b-921c-d9c0d90cbc5a";
-				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};

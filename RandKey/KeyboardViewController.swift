@@ -11,56 +11,30 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
     
     // MARK: Outlet
-    @IBOutlet var nextKeyboardButton: UIButton!
-    @IBOutlet var clearKeyboardButton: UIButton!
-    @IBOutlet var plainSentenceKeyboardButton: UIButton!
-    @IBOutlet var longSentenceKeyboardButton: UIButton!
-    @IBOutlet var textWithEmojiKeyboardButton: UIButton!
-    @IBOutlet var singleWorkKeyboardButton: UIButton!
-    @IBOutlet var dismissKeyboardButton: UIButton!
-    @IBOutlet weak var image1KeyboardButton: UIButton!
-    @IBOutlet weak var image2KeyboardButton: UIButton!
-    @IBOutlet weak var infoKeyboardLabel: UILabel!
+    @IBOutlet weak var configurationView: UIView!
+    @IBOutlet weak var keyboardView: UIView!
+    @IBOutlet weak var appConfiguredTickImageView: UIImageView!
+    @IBOutlet weak var openAccessTickImageView: UIImageView!
     
     // MARK: Properties
     
-    /// Default data source for keyboard that will be used if nothing else provided
-    private var defaultDataSource = RKDafaultDataSource()
-    
-    /// Data source implementation that will deliver all texts to keyboard
-    public var dataSource: RKDataSource?
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        // Set default data source at init
-        self.dataSource = self.defaultDataSource
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        // Set default data source at init
-        self.dataSource = self.defaultDataSource
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.loadInterface()
-        self.setupKeyboard()
+        loadInterface()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // If not full access granted - show info label
-        if !isOpenAccessGranted() {
-            self.infoKeyboardLabel.text = "Enable full access to copy images"
-        } else {
-            self.infoKeyboardLabel.text = ""
-        }
+        setupKeyboard()
     }
     
     /// Loads keyboard view from nib
@@ -72,56 +46,76 @@ class KeyboardViewController: UIInputViewController {
     
     /// Adds functionality to view 
     private func setupKeyboard() {
-        
-        // To next button add call to function moving to next keyboard
-        self.nextKeyboardButton.addTarget(self,
-                                          action: #selector(advanceToNextInputMode),
-                                          for: .touchUpInside)
-        
+        if isOpenAccessGranted(), RKTextDataSource.shared.isConfigured {
+            keyboardView.isHidden = false
+            configurationView.isHidden = true
+        } else {
+            openAccessTickImageView.alpha = isOpenAccessGranted() ? 1.0 : 0.2
+            appConfiguredTickImageView.alpha = RKTextDataSource.shared.isConfigured ? 1.0 : 0.2
+            
+            configurationView.isHidden = false
+            keyboardView.isHidden = true
+        }
     }
     
-    // MARK: Actions
+    // MARK: Image actions
     
     @IBAction func imageCopyAction(_ sender: UIButton) {
         
         // We can always get image from button
         if let img: UIImage = sender.image(for: .normal) {
             UIPasteboard.general.image = img
-            self.infoKeyboardLabel.text = "Copied!"
         }
         
         
     }
-    @IBAction func dismissKeyboardAction(_ sender: AnyObject) {
-        
-        self.dismissKeyboard()
-        
-    }
+    
+    // MARK: Text actions
     
     @IBAction func insertPlainSentanceAction(_ sender: AnyObject) {
-        print("Disp")
-        self.insertText(text:
-            self.dataSource?.shortTexts.randomItem() ?? "")
+        let quoteText = RKTextDataSource.shared.randomQuoteText
+        self.insertText(text: quoteText)
     }
     
     @IBAction func insertLongSentanceAction(_ sender: AnyObject) {
-        self.insertText(text:
-            self.dataSource?.longTexts.randomItem() ?? "")
+        let longText = RKTextDataSource.shared.randomLongText
+        self.insertText(text: longText)
     }
     
     @IBAction func insertTextWithEmojiAction(_ sender: AnyObject) {
-        self.insertText(text:
-            self.dataSource?.emojiTexts.randomItem() ?? "")
+        let emojiText = RKTextDataSource.shared.randomEmoji
+        self.insertText(text: emojiText)
     }
     
     @IBAction func insertSingleWordAction(_ sender: AnyObject) {
-        
-        self.insertText(text:
-            self.dataSource?.singleWords.randomItem() ?? "")
+        let singleWord = RKTextDataSource.shared.randomSingleWork
+        self.insertText(text: singleWord)
+    }
+    
+    // MARK: Settings actions
+    
+    @IBAction func dismissKeyboardAction(_ sender: AnyObject) {
+        dismissKeyboard()
+    }
+    
+    @IBAction func nextKeyboardAction(_ sender: AnyObject) {
+        self.advanceToNextInputMode()
     }
     
     @IBAction func clearAction(_ sender: AnyObject) {
         self.clearText()
+    }
+    
+    // MARK: Session actions
+    
+    @IBAction func loginAction(_ sender: Any) {
+        let login = RKTextDataSource.shared.randomLogin
+        self.insertText(text: login, withSpace: false)
+    }
+    
+    @IBAction func passwordAction(_ sender: Any) {
+        let password = RKTextDataSource.shared.password
+        self.insertText(text: password, withSpace: false)
     }
     
     // MARK: Utils
@@ -135,9 +129,12 @@ class KeyboardViewController: UIInputViewController {
     }
     
     /// Inserts given text to input field and adds space at the end
-    private func insertText(text: String) {
+    private func insertText(text: String, withSpace addSpace: Bool = true) {
         let proxy = textDocumentProxy
-        proxy.insertText(text + " ")
+        proxy.insertText(text)
+        if addSpace {
+            proxy.insertText(" ")
+        }
     }
     
     // Checks if full access granted

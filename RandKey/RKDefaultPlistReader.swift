@@ -8,17 +8,8 @@
 
 import Foundation
 
-/// Protocol that Keyboard view controller will be using for fetchin data to keyboard
-public protocol RKDataSource: class {
-    
-    var shortTexts: [String] { get }
-    var longTexts: [String] { get }
-    var emojiTexts: [String] { get }
-    var singleWords: [String] { get }
-}
-
 /// Default datasource containing strings shipped with this keyboard
-class RKDafaultDataSource: RKDataSource {
+class RKDefaultPlistReader {
     
     private var dictOfPossibleArrays: NSDictionary?
     
